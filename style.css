@@ -1,0 +1,590 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.header{
+    height: 90vh;
+    position: relative;
+}
+.catering-para{
+    text-align: center;
+    font-size: 22pt;
+    font-family: Arial, Helvetica, 'Lucida sans Unicode';
+
+}
+.copyright{
+    text-align: center;
+    font-family: 'monospace,';
+    letter-spacing: 3px;
+}
+
+/* This is for the navbar */
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px;
+    z-index: 10;
+    position: fixed;
+
+}
+/* This is the nav-list */
+.nav-list{
+    font-size: 18pt;
+    list-style: none;
+}
+/* This is the navbar-item */
+.navbar-items{
+    display: inline-block;
+}
+/* This is for all the link visited in the navbar */
+.navbar-link :visited,
+.navbar-link{
+    text-decoration: none;
+    color: black;
+    padding: 2rem;
+    transition: all .2s ease-in-out;
+}
+.navbar-link:hover{
+    background-color: rgb(17, 190, 182);
+    color: cornsilk;
+    transition: all .2s ease-in-out;
+    border: solid 1px;
+    border-radius: 50px;
+}
+/* This is for the toggle */
+.toggle{
+    height: 5rem;
+    width: 5rem;
+    display: none;
+}
+.toggle.div{
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    margin: 1rem;
+}
+/* This is for the header container */
+.body-container{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+/* This is for the h1 tag in the header box */
+.header-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(21, 148, 180);
+
+}
+.heading-primary{
+    font-size: 22pt;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+#Catering{
+color: rgb(3, 12, 26);
+font-weight: 800;
+letter-spacing: 10px;
+font-size: 44px;
+}
+/* This is for the lead class and the p tag */
+.lead{
+    font-size: 22pt;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.Book-now:visited,
+.Book-now:link
+{
+text-decoration: none;
+display: inline-block;
+color: white;
+background-color: tomato;
+font-size: 1rem;
+padding: 2rem;
+margin-top: 4rem;
+border: 1px solid;
+border-radius: 70px;
+transition: all .9s ease-in-out;
+box-shadow: 0 1rem 1rem rgba(240, 240, 240, 240);
+text-shadow: 0 1rem 1rem rgba(0,0,0,.9);
+}
+/* This is for the book now hover */
+.Book-now:hover{
+    background-color: rosybrown;
+    box-shadow: 0 0 2rem rgba(240, 107, blue, alpha);
+    border-radius: 50px;
+    border: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+
+/* This is for the food page styling */
+
+
+.menu{
+    width: 100%;
+    padding: 10rem 5rem;
+    background-color: #fff;
+
+}
+
+/* This is for the menu grid */
+.menu-grid{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+    grid-gap: 2rem
+}
+/* This is for the image boxing */
+
+
+
+.menu-img2{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url(./img/FOOD/f10.jfif);
+}
+.menu-img3{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url(./img/FOOD/f12.jpg);
+}
+.menu-img4{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url(./img/FOOD/f13.jpg);
+}
+.menu-img5{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url(./img/FOOD/f5.jpg);
+}
+
+.menu-container{
+    width: 100%;
+    height: 25rem;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0,0,0,.9);
+    transition: all .4s ease;
+
+}
+.header-tag{
+    text-align: center;
+    font-size: 22pt;
+    
+
+}
+.menu-drink1{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url(./img/DRINK/3600947113_fe7208d8a8_b.jpg);
+}
+.menu-drink2{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url(./img/DRINK/637605572811672175soft\ drink\ pour\ square2.jpeg);
+}
+.menu-drink3{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url(./img/DRINK/b1eda25fc12ff3088c850614dd8f55cf.webp);
+}
+.menu-drink4{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url(./img/DRINK/Common_alcoholic_beverages.jpg);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#fff;
+    overflow: hidden;
+}
+.header{
+    height: 90vh;
+    position: relative;
+}
+.catering-para{
+    text-align: center;
+    font-size: 22pt;
+    font-family: 'helvetica', 'arial', 'Lucida Sans Unicode';
+}
+/* this is for the navbar */
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px;
+    z-index: 10;
+    position: fixed;
+}
+/*this are navbar list*/
+.nav-list{
+    list-style: circle;
+    font-size: 22px;
+}
+/*this is for the nav-item in each list*/
+.navbar-item{
+    display: inline-block;
+}
+/*this is for all the link visited in in the navbar*/
+.navbar-link:visited,
+.navbar-link:link{
+    text-decoration: none;
+    /* color: #000; */
+    padding: 2rem;
+    transition: all .2s ease-in-out;
+}
+.navbar-link:hover{
+    background-color: rgb(168, 168, 129);
+    color: white;
+    transition: all .9s ease-in-out;
+    border: solid 1px red;
+    border-radius: 40px;
+}
+/*this is for the toggle*/
+.toggle{
+    height: 5rem;
+    width: 5rem;
+    display: none;
+}
+
+.toggle div{
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    margin: 1rem;
+}
+/*this is for the header container*/
+.header-container{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+/*this is for the h1 tag in the*/
+.header-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(240, 158, 8);
+}
+.heading-primary{
+    font-size: 22pt;
+    letter-spacing: 3px;
+}
+#resturant{
+    color: #da6b1d;
+    font-weight: 800;
+    letter-spacing: 20px;
+    font-size: 44px;
+}
+/*this is for the lead class and for the p tag*/
+.lead{
+   
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.book-now:visited,
+.book-now:link{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    background-color: tomato;
+    font-size: 1rem;
+    padding: 2rem;
+    margin-top: 4rem;
+    border: 1px solid #4b0202;
+    border-radius: 10px 40px;
+    transition: all .9s ease;
+    box-shadow: 0 1rem 1rem rgba(240, 240, 240, 240);
+    text-shadow: 0 1rem 1rem rgba(0,0,0,.9);
+
+}
+/*this is for the book now hover styling*/
+
+.book-now:hover{
+    background-color: #1cf12d;
+    border: 1px solid white;
+    border-radius: 50px;
+    box-shadow: 0 0 2rem rgba(240,107,55, .8);
+    color: rgba(0,0,0,.9);
+    font-weight: 800;
+    font-family: verdana;
+}
+
+
+/* this is for the food page styling */
+
+.menu{
+    width: 100%;
+    padding: 10rem 5rem;
+    background-image: white;
+}
+.menu-heading{
+    font-size: 12rem;
+    text-align: center;
+    text-shadow: 0 0 1rem rgba(0,0,0,.9);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+}
+/*this is for the meun grid class and this styling makes the box to be in box */
+.menu-grid{
+    display: grid;
+    grid-template-rows:repeat(2, 1fr) ;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+    grid-gap: 2rem;
+}
+/*===========this si for the image boxing ============to be styling and add images later*/
+
+.menu-img1{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url(../assignment/contact.jpg);
+}
+
+
+/*this is for the styling of the box that containing the fooda nd drinks*/
+.menu-container{
+    width: 100%;
+    height: 40rem;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    transition: all .4s ease;
+}
+
+
+/*this is for the paragraph tags in the box*/
+.menu-p{
+    font-size: 22pt;
+    padding: 1rem;
+    text-align: center;
+}
+/*this is for all the title in the box*/
+
+.menu-title{
+    font-size: 3rem;
+    text-align: center;
+}
+/*this is styling of the price*/
+.price{
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: black;
+    text-shadow: 0 .4rem 2rem rgba(0,0,0,.4);
+}
+
+/* ===============================================this is for the contact form==================================================================================================================================================================== */
+
+.header-h1tag{
+    text-align: center;
+   text-transform: uppercase;
+   padding: 12px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background-color: turquoise;
+
+
+}
+
+.header-h1tag:hover{
+    text-align: center;
+   text-transform: uppercase;
+   padding: 12px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background-color: rgb(243, 117, 14);
+   color: #fff;
+   border: 1px solid turquoise;
+   border-radius: 24px;
+   
+
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-color: white;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+form{
+    width: 90%;
+    max-width: 600px;
+    border: 1px solid rgb(255, 81,0);
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+
+}
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid gray;
+    color: black;
+     background: rgb(160, 158, 158);
+    font-size: 22pt;
+}
+textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid gray;
+    color: black;
+    background: rgb(160, 158, 158);
+    font-size: 22pt;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: white;
+    cursor: text;
+    font-weight: bolder;
+    font-size: 24px;
+    transition: 0.9s;
+
+}
+button{
+    padding: 10px;
+    color: rgb(10, 10, 10);
+    background: transparent;
+    border: 1px solid #fff;
+    width: 40%;
+    cursor: pointer;
+}
+.submit{
+    margin-right: 55px;
+    background-color: rgb(255, 81,0);
+    border-radius: 20px;
+    font-size: 22px;
+}
+.submit:hover{
+
+    background-color: green;
+    border-radius: 20px;
+    font-size: 22px;
+    color: white;
+}
+.reset{
+    margin-left: 57px;
+    background-color: rgb(255, 81,0);
+    font-size: 22px;
+    border-radius: 20px;
+  
+}
+
+.reset:hover{
+    background-color: red;
+    border-radius: 20px;
+    font-size: 22px;
+    color: white;
+}
+
+.file-mess{
+    text-align: right;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.thanks{
+    text-align: center;
+    font-size: 18px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    color: tomato;
+    font-weight: bolder;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.input-group:focus~label,
+.input-group:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    color: tomato;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+/* this is for the phone and name */
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .input-group{
+    flex-basis: 48%;
+
+}
+
+
+
